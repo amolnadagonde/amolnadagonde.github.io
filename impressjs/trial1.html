@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>impress.js </title>
+	</head>
+	<body onload="getData()">
+		
+			<div id="impress" data-width="1024" data-height="768">
+	            <div class="step" data-x="320">
+	                Static content 1
+	            </div>
+	            <div class="step" data-x="0">
+	                Static content 2
+	            </div>
+	        </div>
+
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+		<script id="address-template" type="text/x-handlebars-template">
+			{{#each contain}}
+				<div class="step" data-x="0">
+					<p>{{title}}{{text}}.</p>
+				</div>
+			{{/each}}
+		</script> -->
+		<script src="../js/impress.js"></script>
+		<script>
+			var getData = function(){
+				console.log('in loading');
+				var elems;
+				if(localStorage.dataObject){
+					console.log('got data');
+					elems = JSON.parse(localStorage.getItem('dataObject'));
+					console.log(elems);
+					for(var i = 0; i < elems.length; i++){
+						$('#impress').append('<div class="step" data-x='+elems[i].datax+'>'+elems[i].text+'</div>');
+					}
+
+					setTimeout(function(){
+						console.log('in timer');
+						impress().init();
+					}, 2000)
+				}
+
+				// $( "#result" ).load( "index.html #toImport");
+
+				// // Grab the template script
+				// var theTemplateScript = $("#address-template").html();
+
+				// // Compile the template
+				// var theTemplate = Handlebars.compile(theTemplateScript);
+
+				// // Define our data object
+				// var context= obj;
+
+				// // Pass our data to the template
+				// var theCompiledHtml = theTemplate(context);
+
+				// console.log(theCompiledHtml);
+				// // Add the compiled html to the page
+				// $('#impress > div').html(theCompiledHtml);
+			};
+			$(window).load(function(){
+				console.log('doc loaded');
+			});
+		</script>
+	</body>
+</html>

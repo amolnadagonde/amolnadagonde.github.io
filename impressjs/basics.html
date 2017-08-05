@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Impress Js</title>
+        <link rel="stylesheet" href="../css/base.css" />
+        <style>
+
+        .step {
+            min-width: 400px;
+            min-height: 400px;
+            border: 1px solid #ccc;
+            background: #fcfcfc;
+        }
+/*.impress-enabled .step {
+margin: 0;
+opacity: 0;
+}
+.impress-enabled .step.active { opacity: 1;border:none; }
+*/
+        </style>
+    </head>
+    <body>
+
+        <div id="impress" data-width="1024" data-height="768">
+            <div class="step" data-x="0">
+                Step 1 contents
+            </div>
+
+            <div class="step" data-x="1980">
+                Step 2 contents
+            </div>
+
+            <div class="step" data-x="1980" data-y="980">
+                Step 3 contents
+            </div>
+
+            <div class="step" data-y="980" data-x="3960">
+                Step 4 contents
+            </div>
+
+            <div class="step" data-x="3960" data-rotate-x="90" >
+                Step 5
+            </div>
+
+            <div class="step" data-x="3960" data-y="1960" data-rotate-x="180">
+                Step 6
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="../js/impress.js"></script>
+        <script src="../js/myJs.js"></script>
+
+        <script>impress().init();</script>
+    </body>
+</html>
