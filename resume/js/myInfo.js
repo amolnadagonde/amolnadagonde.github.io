@@ -1,0 +1,64 @@
+var resumeContent = {
+	objective: "To be a developer in a challenging and competitive environment where I can apply best of my knowledge and can improve my professional as well as personal skills.",
+	
+	aboutMe: {
+		myName: "Amol Gajanan Nadagonde",
+		contactMe: {
+			mobileNumber: 9545905268
+			email: "amol.nadagonde@gmail.com"
+		}
+	},
+	
+	professionalSummary: [
+		"A dynamic professional having a 7 years 4months experience in designing and developing web-sites.",
+		"Well experienced with HTML, CSS, LESS-CSS, Dreamweaver, Balsamiq, Photoshop, Javascript, jQuery, JSON, Ajax.",
+		"Team player with good communication skills and sound technical knowledge to solve problems of clients."
+	],
+	
+	experience:[
+		{
+			company: "Atos Syntel Pvt Ltd",
+			role: "Consultant",
+			duration: "March 2018 - till date",
+			teamSize: "3",
+			description: "Supporting the CYBG Banking web application named as Be on Web(BoW).",
+			responsibilities: [
+				"Worked with the database team for managing customers accounts of Clydesdale and Yorkshire Bank Group.",
+				"Providing support for UI related to CSS, React and Flux issues in CYBG.",
+				"Worked on the Kibana tool, to check the logs of customers and find the root cause of issues.",
+				"Good knowledge of JIRA ticket management and Service Now incident management system."
+			]			
+		}
+	],
+	
+	educationalBackground: [
+		{
+			nameOfInstitute: "DKTE Textile and Engineering Institute, Ichalkaranji",
+			stream: "IT",
+			degree: "BE",
+			percentage: "57.78%",
+			yearOfPassing: "2010"
+		}
+	],
+	
+	hobbies: [
+		"Photography", "Drawing", "listening to music", "cooking"
+	],
+	
+	personalDetails: [
+		{
+			dateOfBirth: "14th July 1987",
+		}, 
+		{
+			languages: ["English", "Marathi", "Hindi"]
+		},
+		{
+			temporaryAddress: "Flat no. 603, B - Wing, Destination Memoir, Patilnagar, Chikhali - 411062"
+		},
+		{
+			permanentAddress: "11/246, Opp. Arvind Process, Station Road, Ichalkaranji - 416115"
+		}
+	]
+}
+
+export default resumeContent;
