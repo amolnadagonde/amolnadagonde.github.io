@@ -13,7 +13,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "homepage": "https://amolnadagonde.github.io/my-app",
+    "homepage": "https://amolnadagonde.github.io/reactapp/my-app",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
